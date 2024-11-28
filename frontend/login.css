@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
 .mytitle {
     width: 300px;
     height: 200px;
