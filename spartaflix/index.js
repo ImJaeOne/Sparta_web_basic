@@ -1,3 +1,13 @@
+$(document).ready(function () {
+    let url = 'http://spartacodingclub.shop/sparta_api/weather/seoul';
+    fetch(url)
+        .then((res) => res.json())
+        .then((data) => {
+            let temp = data.temp;
+            $('#degree').text(temp);
+        });
+});
+
 $('.btn-outline-light')
     .eq(1)
     .on('click', function () {
