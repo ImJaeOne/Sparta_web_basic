@@ -1,3 +1,14 @@
+// 페이지가 로딩되면 자동으로 fetch
+$(document).ready(function () {
+    let url = 'http://spartacodingclub.shop/sparta_api/seoulair';
+    fetch(url)
+        .then((res) => res.json())
+        .then((data) => {
+            let mise = data['RealtimeCityAir']['row'][0]['IDEX_NM'];
+            $('#degree').text(mise);
+        });
+});
+
 $('#remember_btn').on('click', function () {
     $('#postingbox').toggle();
 });
