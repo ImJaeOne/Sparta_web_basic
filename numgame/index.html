@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>숫자 기억 게임</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game">
+      <h1>숫자 기억 게임</h1>
+      <h2 id="h2-display">시작을 클릭해주세요.</h2>
+      <div id="number-display" class="number-display">
+        <input type="text" id="user-input" placeholder="숫자를 입력하세요" />
+        <button id="start-button" class="start-button">시작</button>
+        <button id="submit-button" class="submit-button">제출</button>
+        <div id="result" class="result"></div>
+      </div>
+    </div>
+    <div class="record">
+      <div class="record-table">
+        <div>정답</div><div>소요 시간</div><div>날짜</div>
+      </div>
+      <div class="record-items">
+        
+      </div>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>

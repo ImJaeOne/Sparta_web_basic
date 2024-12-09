@@ -1,0 +1,117 @@
+body {
+  background-color: rgb(220, 220, 220);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+input,
+button {
+  height: 50px;
+  padding: 0 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.result {
+  display: flex;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.record {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.record-table {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.record-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.record-item div {
+  width: 33%;
+  height: 30px;
+  text-align: center;
+}
+
+.record-items .answer-true {
+  color: #4CAF50;
+}
+
+.record-items .answer-false{
+    color: #993535;
+}
+
+.record-items .timer {
+  color: #2196F3;
+}
+
+.record-items .date {
+  color: #757575;
+}
+
+.record-table div, .record-items div {
+  flex: 1;
+  text-align: center;
+}
+
+.record-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
